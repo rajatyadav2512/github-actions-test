@@ -1,17 +1,14 @@
-main.yml
- name: Test Action
+name: Test Action
+on:
+  push:
+    branches:
+      - main  # or any branch you want to trigger the action
 
- on:
-   push:
-     branches:
-       - main  # or any branch you want to trigger the action
-
- jobs:
-   test:
-     runs-on: ubuntu-latest
-     steps:
-       - name: Checkout code
-         uses: actions/checkout@v3
-
-       - name: 24f3002352@ds.study.iitm.ac.in
-         run: echo "Hello, world!"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run a simple echo command
+        run: echo "Hello, world! Email check placeholder for 24f3002352@ds.study.iitm.ac.in"
