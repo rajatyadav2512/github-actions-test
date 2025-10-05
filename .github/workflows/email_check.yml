@@ -1,5 +1,5 @@
 main.yml
-name: Test Action
+ name: Test Action
 
  on:
    push:
